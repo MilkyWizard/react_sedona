@@ -4,7 +4,7 @@ import {
     Switch,
     Route,
     Link,
-} from 'react-router-dom';
+} from "react-router-dom";
 import Container from "./Container";
 
 function Top() {
@@ -29,10 +29,10 @@ function Top() {
                         <li className="nav__item nav__item_logo">
                             <Link className="nav__link nav__link_logo" to="/">
                                 <picture>
-                                    <source media="(max-width: 767px)" srcSet="../public/img/logo-sedona-mobile.svg"/>
-                                    <source media="(max-width: 1279px)" srcSet="../public/img/logo-sedona-tablet.svg"/>
-                                    <source media="(min-width: 1280px)" srcSet="../public/img/logo-sedona-desktop.svg"/>
-                                    <img className="nav__logo" src="../public/img/logo-sedona-desktop.svg" alt="Sedona" width="188" height="98"/>
+                                    <source media="(max-width: 767px)" srcSet="/img/logo-sedona-mobile.svg"/>
+                                    <source media="(max-width: 1279px)" srcSet="/img/logo-sedona-tablet.svg"/>
+                                    <source media="(min-width: 1280px)" srcSet="/img/logo-sedona-desktop.svg"/>
+                                    <img className="nav__logo" src="/img/logo-sedona-desktop.svg" alt="Sedona" width="188" height="98"/>
                                 </picture>
                             </Link>
                         </li>
