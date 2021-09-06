@@ -1,4 +1,6 @@
 import Top from "./Top";
+import "./App.css";
+
 
 function App() {
   return (

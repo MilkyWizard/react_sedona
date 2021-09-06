@@ -1,54 +1,61 @@
 import React from "react";
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
 } from 'react-router-dom';
+import Container from "./Container";
 
-function Top () {
+function Top() {
     return (
-      <Router>
-          <header>
-            <nav>
-              <ul>
-                <li>
-                  <Link to="/">Главная</Link>
-                </li>
-                <li>
-                  <Link to="/media">Фото и видео</Link>
-                </li>
-                <li>
-                  <Link to="/">Лого</Link>
-                </li>
-                <li>
-                  <Link to="/form">Форма отзыва</Link>
-                </li>
-                <li>
-                  <Link to="/academy">HTML Academy</Link>
-                </li>
-              </ul>
-            </nav>
-          </header>
+        <Router>
+            <header className="header">
+                <nav className="nav">
+                    <button className="close-button"> </button>
+                    <ul className="nav__list">
+                        <li className="nav__item">
+                            <Link className="nav__link" to="/">Главная</Link>
+                        </li>
+                        <li className="nav__item">
+                            <Link className="nav__link" to="/media">Фото и видео</Link>
+                        </li>
+                        <li className="nav__item">
+                            <Link className="nav__link" to="/form">Форма отзыва</Link>
+                        </li>
+                        <li className="nav__item">
+                            <Link className="nav__link" to="/academy">HTML Academy</Link>
+                        </li>
+                        <li className="nav__item nav__item_logo">
+                            <Link className="nav__link nav__link_logo" to="/">
+                                <picture>
+                                    <source media="(max-width: 767px)" srcSet="../public/img/logo-sedona-mobile.svg"/>
+                                    <source media="(max-width: 1279px)" srcSet="../public/img/logo-sedona-tablet.svg"/>
+                                    <source media="(min-width: 1280px)" srcSet="../public/img/logo-sedona-desktop.svg"/>
+                                    <img className="nav__logo" src="../public/img/logo-sedona-desktop.svg" alt="Sedona" width="188" height="98"/>
+                                </picture>
+                            </Link>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
-          <main>
-            <Switch>
-              <Route path="/media">
-                <Media />
-              </Route>
-              <Route path="/form">
-                <Form />
-              </Route>
-              <Route path="/">
-                <Home />
-              </Route>
-            </Switch>
-          </main>
+            <main>
+                <Switch>
+                    <Route path="/media">
+                        <Media/>
+                    </Route>
+                    <Route path="/form">
+                        <Form/>
+                    </Route>
+                    <Route path="/">
+                        <Container/>
+                    </Route>
+                </Switch>
+            </main>
         </Router>
-      );
+    );
 }
-
-const Home = () => <h2>Главная</h2>;
 
 const Media = () => <h2>Фото и видео</h2>;
 
