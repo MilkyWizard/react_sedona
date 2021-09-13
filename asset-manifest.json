@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react_sedona/static/css/main.092f5968.chunk.css",
+    "main.js": "/react_sedona/static/js/main.a8e6ed48.chunk.js",
+    "main.js.map": "/react_sedona/static/js/main.a8e6ed48.chunk.js.map",
+    "runtime-main.js": "/react_sedona/static/js/runtime-main.ee60f602.js",
+    "runtime-main.js.map": "/react_sedona/static/js/runtime-main.ee60f602.js.map",
+    "static/js/2.5019781a.chunk.js": "/react_sedona/static/js/2.5019781a.chunk.js",
+    "static/js/2.5019781a.chunk.js.map": "/react_sedona/static/js/2.5019781a.chunk.js.map",
+    "index.html": "/react_sedona/index.html",
+    "static/css/main.092f5968.chunk.css.map": "/react_sedona/static/css/main.092f5968.chunk.css.map",
+    "static/js/2.5019781a.chunk.js.LICENSE.txt": "/react_sedona/static/js/2.5019781a.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/react_sedona/static/media/video-mobile@2x.952cc301.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ee60f602.js",
+    "static/js/2.5019781a.chunk.js",
+    "static/css/main.092f5968.chunk.css",
+    "static/js/main.a8e6ed48.chunk.js"
+  ]
+}
