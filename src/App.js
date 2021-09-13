@@ -5,12 +5,10 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-        <Top />
+      <Top/>
     </div>
   );
 }
-
-
 
 
 export default App;

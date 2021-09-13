@@ -5,7 +5,8 @@ import {
     Route,
     Link,
 } from "react-router-dom";
-import Container from "./Container";
+import MainPage from "./MainPage";
+import MediaPage from "./MediaPage";
 
 function Top() {
     return (
@@ -43,21 +44,19 @@ function Top() {
             <main>
                 <Switch>
                     <Route path="/media">
-                        <Media/>
+                        <MediaPage/>
                     </Route>
                     <Route path="/form">
-                        <Form/>
+                        <Form />
                     </Route>
                     <Route path="/">
-                        <Container/>
+                        <MainPage/>
                     </Route>
                 </Switch>
             </main>
         </Router>
     );
 }
-
-const Media = () => <h2>Фото и видео</h2>;
 
 const Form = () => <h2>Форма отзыва</h2>;
 
