@@ -33,7 +33,7 @@ function Top() {
                                     <source media="(max-width: 767px)" srcSet="/img/logo-sedona-mobile.svg"/>
                                     <source media="(max-width: 1279px)" srcSet="/img/logo-sedona-tablet.svg"/>
                                     <source media="(min-width: 1280px)" srcSet="/img/logo-sedona-desktop.svg"/>
-                                    <img className="nav__logo" src="./img/logo-sedona-desktop.svg" alt="Sedona" width="188" height="98"/>
+                                    <img className="nav__logo" src="../img/logo-sedona-desktop.svg" alt="Sedona" width="188" height="98"/>
                                 </picture>
                             </Link>
                         </li>
